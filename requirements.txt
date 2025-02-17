@@ -1,0 +1,8 @@
+anthropic
+chromium
+goodreads
+netscape
+openai
+rdf
+rdfs
+xsd
