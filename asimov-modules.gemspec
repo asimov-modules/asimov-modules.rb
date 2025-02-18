@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
   gem.email              = "support@asimov.so"
 
   gem.platform           = Gem::Platform::RUBY
-  gem.files              = %w(AUTHORS CHANGES.md README.md UNLICENSE VERSION)
+  gem.files              = %w(AUTHORS CHANGES.md README.md UNLICENSE VERSION) + Dir.glob("lib/**/*.rb")
   gem.bindir             = %q(bin)
   gem.executables        = %w()
 
@@ -28,6 +28,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "asimov-module", ">= 25.0.0.dev"
 
   File.read("requirements.txt").each_line.map(&:chomp).sort.each do |module_id|
-    gem.add_runtime_dependency "asimov-#{module_id}-module"
+    gem.add_runtime_dependency module_id
   end
 end

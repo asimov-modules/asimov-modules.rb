@@ -1,8 +1,8 @@
-anthropic
-chromium
-goodreads
-netscape
-openai
-rdf
-rdfs
-xsd
+asimov-anthropic-module
+asimov-chromium-module
+asimov-goodreads-module
+asimov-netscape-module
+asimov-openai-module
+asimov-rdf-module
+asimov-rdfs-module
+asimov-xsd-module
